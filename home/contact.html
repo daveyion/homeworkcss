@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzadia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./logo/logo.png" width="90" alt="company logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sect">
+        <div class="div">_</div>
+        <h1 class="h1">Contact & Order</h1>
+
+        <section class="section">
+                        <div class="contact-map">
+            <!-- Contact Info -->
+                <section class="contact">
+                    <p>📞 (876) 555-1122</p>
+                    <p>✉️ orders@pizzadia.com</p>
+                    <p>Call or message us to place your order</p>
+                </section>
+
+            <!-- Map Section -->
+                <section class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.123456!2d-77.123456!3d18.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb1234567890%3A0x123456789abcdef!2sNegril%2C%20Jamaica!5e0!3m2!1sen!2sus!4v1234567890"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+            </div>
+            <!-- Order Form -->
+            <section class="order">
+                <h2 class="legend">Pizzadia Order Form</h2>
+                <form action="#" method="post">
+
+                    <!-- Customer Info -->
+                    <fieldset class="cinfo">
+                        <legend>Customer Information</legend>
+                        <label for="name">Enter your name:</label>
+                        <input class="c-info" type="text" id="name" name="name" required placeholder="John Brown">
+                        <br><br>
+                        <label for="email">Enter your email:</label>
+                        <input class="c-info" type="email" id="email" name="email" required placeholder="example@gmail.com">
+                    </fieldset>
+
+                    <!-- Pizza Selection -->
+                    <fieldset>
+                        <legend>Pizza Choice</legend>
+                        <label for="pizza">Select Pizza:</label>
+                        <select class="select" id="pizza" name="pizza" required>
+                            <option value="" disabled selected hidden>Choose a pizza...</option>
+                            <option value="margherita">Margherita - $8</option>
+                            <option value="pepperoni-feast">Pepperoni Feast - $10</option>
+                            <option value="truffle-chicken">Truffle Chicken - $12</option>
+                            <option value="veggie-supreme">Veggie Supreme - $9</option>
+                        </select>
+                        <br><br>
+                        <label for="quantity">Quantity:</label><br>
+                        <input class="input" type="number" id="quantity" name="quantity" min="1" max="10" required placeholder="Enter quantity">
+                    </fieldset>
+
+                    <!-- Sides -->
+                    <fieldset class="fieldset">
+                        <legend>Choose a Side</legend>
+                        <select id="side" name="side">
+                            <option value="" disabled selected hidden>Choose a side...</option>
+                            <option value="garlic-bread">Garlic Bread - $4</option>
+                            <option value="cheese-sticks">Cheese Sticks - $5</option>
+                            <option value="salad-bowl">Salad Bowl - $6</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Drinks -->
+                    <fieldset class="fieldset">
+                        <legend>Choose a Drink</legend>
+                        <select id="drink" name="drink">
+                            <option value="" disabled selected hidden>Choose a drink...</option>
+                            <option value="soft-drink">Soft Drink - $2</option>
+                            <option value="juice">Juice - $3</option>
+                            <option value="mocktail">Mocktail - $4</option>
+                            <option value="cocktail">Cocktail - $6</option>
+                            <option value="water">Water - $1</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Special Requests -->
+                    <fieldset class="fieldset">
+                        <legend>Special Requests</legend>
+                        <textarea id="requests" name="requests" rows="3" placeholder="Add extra cheese, no onions, etc."></textarea>
+                    </fieldset>
+
+                    <input class="submit" type="submit" value="Submit Order">
+                </form>
+            </section>
+        </section>
+    </section>
+    <footer>
+        Address: “123 Pizza Street, Kingston, Jamaica”<br>
+        Phone: (876) 555-1122<br>
+        Social Links: <a href="#">Instagram</a> / <a href="#">Facebook</a>
+    </footer>
+</body>
+</html>
